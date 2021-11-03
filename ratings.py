@@ -29,10 +29,19 @@ def sort_ratings(file):
 
     sorted_ratings = sorted(ratings_dict.items())
 
+
+
     for restaurant, rating in sorted_ratings:
         print(f"{restaurant} is rated at {rating}.")
 
 
 
 sort_ratings("scores.txt")
+
+#create while loop asking user for input
+#offer: #see all ratings in alphabetical order
+        #add a new restaurant (and rate it)
+        #quit
+
+#
 
