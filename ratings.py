@@ -8,6 +8,10 @@ def sort_ratings(file):
     new_restaurant = input("Please enter a restaurant name: ")
     new_rating = input(f"Please enter a rating for {new_restaurant}: ")
 
+    if not int(new_rating) <=5 and int(new_rating) >=1:
+        print("That's not a valid score.")
+        new_rating = input("Please enter a score between 1 and 5: ")
+
     ratings_dict[new_restaurant] = new_rating #add user input to the dictionary
 
     print()
